@@ -1,41 +1,54 @@
-# Project Title
+# Degen Token
 
-Simple overview of use/purpose.
+DegenToken is an ERC-20 token on the Avalanche Fuji Testnet that allows users to redeem various items by burning specific amounts of tokens. It also supports discount codes for lower redemption costs. It contains an in-game which displays the redeemable items.
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+- ERC-20 compliant token with burning capabilities.
+- Owner can mint new tokens.
+- Users can redeem items with specific burn amounts, with optional discount codes.
+
+## Shop Items
+
+- Degen Drink
+- Degen Fan
+- Degen Outfit
+- Degen Shades
+
+## Discounts
+
+- Use discount code `4712` for a special discount.
 
 ## Getting Started
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+- Git clone
+- Export as ZIP
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
+* Deploy contract to fuji network 
 ```
-code blocks for commands
+npx hardhat run scripts/deploy.js --network fuji
+```
+
+* Verify contract in fuji network
+```
+npx hardhat verify {address} --network fuji
 ```
 
 ## Help
+Visit [core.app/tools/testnet-faucet/?subnet=c&token=c] to get avalanche tokens.
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
 
 ## Authors
 
-Contributors names and contact info
+Pranav S Devang
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+[@pranavssdevang@gmail.com]
 
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the [MIT] License 
